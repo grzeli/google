@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier",
+    "eslint-config-prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "printWidth": 100, "jsxSingleQuote": true }
+    ]
+  },
+  "ignorePatterns": ["README.MD", "*.svg", "*.png", "*.html", "*.config.js"]
 }
