@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html::-webkit-scrollbar {
+@layer components {
+  .link {
+    @apply hover:underline cursor-pointer;
+  }
+}
+
+html::-webkit-scrollbar {
   display: none;
 }
 
 html {
   scrollbar-width: none;
-} */
+}
