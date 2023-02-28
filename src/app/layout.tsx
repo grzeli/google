@@ -1,20 +1,16 @@
-import Header from '@/components/Header'
-import './globals.css'
-import Providers from './Providers'
+import HomeHeader from '@/components/HomeHeader';
+import './globals.css';
+import Providers from './Providers';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body>
         <Providers>
-          <Header />
+          <HomeHeader />
           {children}
         </Providers>
       </body>
     </html>
-  )
+  );
 }
