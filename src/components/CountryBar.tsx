@@ -1,17 +1,11 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function CountryBar() {
   const [country, setCountry] = useState<string>('Polski Bantustan');
-  const dupa = useRef(false);
 
   useEffect(() => {
-    if (dupa.current) {
-      return;
-    }
-
-    dupa.current = true;
     try {
       fetch(`https://ipapi.co/json`)
         .then((data) => data.json())
