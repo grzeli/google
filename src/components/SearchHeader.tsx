@@ -9,7 +9,7 @@ import SearchHeaderOptions from './SearchHeaderOptions';
 export default function SearchHeader() {
   return (
     <header className='sticky top-0 bg-white'>
-      <div className='flex w-full p-6 items-center justify-between'>
+      <div className='flex flex-col space-y-4 sm:space-y-0 sm:flex-row w-full p-6 items-center justify-between'>
         <Link href={'/'}>
           <Image
             width='120'
@@ -18,7 +18,7 @@ export default function SearchHeader() {
             alt='home'
           />
         </Link>
-        <div className='flex-1'>
+        <div className='flex-1 w-full sm:w-auto'>
           <SearchBox />
         </div>
         <div className='hidden md:inline-flex space-x-2 mr-2'>
