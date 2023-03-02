@@ -14,7 +14,7 @@
   }
 
   .header-icon {
-    @apply bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer;
+    @apply bg-transparent hover:bg-gray-200 p-2 text-4xl rounded-full cursor-pointer text-gray-500;
   }
 }
 
