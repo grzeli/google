@@ -5,7 +5,7 @@ import Providers from './Providers';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body>
+      <body className='relative min-h-screen'>
         <Providers>
           {children}
           <Footer />

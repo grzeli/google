@@ -1,3 +1,4 @@
+import SearchResults from '@/components/SearchResults';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import Link from 'next/link';
 import React from 'react';
@@ -27,11 +28,7 @@ export default async function WebSearchPage({ searchParams }: Params) {
 
   return (
     <>
-      {data &&
-        data.items &&
-        data.items.map((result: GoogleResultObjectT) => (
-          <h1 key={result.formattedUrl}>{result.title}</h1>
-        ))}
+      <SearchResults data={data} />
     </>
   );
 }
