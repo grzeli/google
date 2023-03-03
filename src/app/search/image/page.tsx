@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import ImageSearchResults from '@/components/ImageSearchResults';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import Link from 'next/link';
