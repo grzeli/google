@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React from 'react';
 import { GoogleResponseT } from './types';
 
-export default async function WebSearchPage({ searchParams }: Params) {
+export default async function WebSearchPage({ searchParams }) {
   const startIndex = searchParams.start || 1;
   const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=
     ${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`);
