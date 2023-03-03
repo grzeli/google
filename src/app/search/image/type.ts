@@ -1,6 +1,6 @@
 import { GoogleQueryT, GoogleResultObjectT, GoogleSearchInformationT } from '../web/types';
 
-export type GoogleImageResultObjectT = Omit<GoogleResultObjectT, 'cacheId'> & {
+export type GoogleImageResultObjectT = Omit<GoogleResultObjectT, 'cacheId' | 'pageMap'> & {
   mime: string;
   fileFormat: string;
   image: GoogleImageT;
