@@ -8,6 +8,7 @@ type PropsT = {
 };
 
 const Providers: React.FC<PropsT> = ({ children }) => {
+  localStorage.theme = 'light';
   return (
     <ThemeProvider>
       <div className='text-gray-700 min-h-screen select-none'>{children}</div>
