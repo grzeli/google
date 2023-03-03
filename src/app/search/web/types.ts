@@ -1,5 +1,7 @@
+import { GoogleImageResultObjectT } from '../image/type';
+
 export type GoogleResultObjectT = {
-  cacheId: string;
+  cacheId?: string;
   kind: string;
   title: string;
   htmlTitle: string;

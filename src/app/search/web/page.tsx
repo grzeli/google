@@ -2,7 +2,7 @@ import SearchResults from '@/components/SearchResults';
 import { Params } from 'next/dist/shared/lib/router/utils/route-matcher';
 import Link from 'next/link';
 import React from 'react';
-import { GoogleResponseT, GoogleResultObjectT } from './types';
+import { GoogleResponseT } from './types';
 
 export default async function WebSearchPage({ searchParams }: Params) {
   const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=

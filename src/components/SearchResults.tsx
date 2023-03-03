@@ -18,7 +18,7 @@ export default function SearchResults({ data }: { data: GoogleResponseT }) {
             </Link>
             <Link
               href={result.link}
-              className='group-hover:underline decoration-blue-500 text-xl truncate font-medium text-blue-700'
+              className='group-hover:underline decoration-blue-600 underline-offset-4 text-xl truncate font-medium text-blue-700'
             >
               {result.title}
             </Link>

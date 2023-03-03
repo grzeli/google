@@ -29,9 +29,9 @@ export default function HomeSearch() {
     const response = await fetch(`https://random-word-api.herokuapp.com/word`)
       .then((data) => data.json())
       .then((data: string[]) => data[0]);
-    setIsLoading(false);
 
     if (!response) {
+      setIsLoading(false);
       return;
     }
 
