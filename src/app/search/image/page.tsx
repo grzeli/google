@@ -5,8 +5,9 @@ import React from 'react';
 import { GoogleImageResponseT } from './type';
 
 export default async function ImageSearchPage({ searchParams }: Params) {
+  const startIndex = searchParams.start || 1;
   const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=
-    ${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX_KEY}&q=${searchParams.searchTerm}&searchType=image`);
+    ${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`);
 
   if (!response.ok) {
     throw new Error('Ups...Something went wrong. Please try again');

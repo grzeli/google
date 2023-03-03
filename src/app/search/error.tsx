@@ -5,6 +5,7 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
   useEffect(() => {
     console.error('Error: ', error);
   }, [error]);
+
   return (
     <div className='flex flex-col justify-center items-center pt-10'>
       <h1 className='text-3xl mb-4'>Ups...Something went wrong</h1>
