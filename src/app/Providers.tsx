@@ -10,7 +10,7 @@ type PropsT = {
 const Providers: React.FC<PropsT> = ({ children }) => {
   return (
     <ThemeProvider>
-      <div className=' text-gray-700 min-h-screen select-none'>{children}</div>
+      <div className='text-gray-700 min-h-screen select-none'>{children}</div>
     </ThemeProvider>
   );
 };
