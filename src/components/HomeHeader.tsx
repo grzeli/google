@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import User from './User';
 import { TbGridDots } from 'react-icons/tb';
 
 export default function Header() {

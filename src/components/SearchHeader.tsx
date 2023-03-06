@@ -17,6 +17,7 @@ export default function SearchHeader() {
             src='/logo.png'
             alt='home'
             className='rounded-xl shadow-lg'
+            priority
           />
         </Link>
         <div className='flex-1 w-full sm:w-auto'>

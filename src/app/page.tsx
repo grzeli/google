@@ -13,6 +13,7 @@ export default function Home() {
           src={'/home_page_logo.png'}
           alt={'google'}
           className='rounded-3xl shadow-xl object-contain w-36 sm:w-[200px] lg:w-[300px]'
+          priority
         ></Image>
         <HomeSearch />
       </div>
