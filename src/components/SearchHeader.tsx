@@ -14,8 +14,9 @@ export default function SearchHeader() {
           <Image
             width='120'
             height='40'
-            src='https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png'
+            src='/logo.png'
             alt='home'
+            className='rounded-xl shadow-lg'
           />
         </Link>
         <div className='flex-1 w-full sm:w-auto'>
@@ -25,7 +26,7 @@ export default function SearchHeader() {
           <RiSettings3Line className='header-icon' />
           <TbGridDots className='header-icon' />
         </div>
-        <button className='bg-blue-500 text-white rounded-lg px-6 py-2 font-medium hover:brightness-110 hover:shadow-md transition-shadow'>
+        <button className='bg-blue-500 text-white rounded-lg px-6 py-2 font-medium hover:brightness-110 hover:shadow-md transition-shadow hidden sm:block'>
           Sign in
         </button>
       </div>

@@ -8,12 +8,11 @@ export default function Home() {
       <HomeHeader />
       <div className='flex flex-col items-center mt-24'>
         <Image
-          width={'300'}
+          width={'290'}
           height={'100'}
-          src={
-            'https://www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png'
-          }
+          src={'/home_page_logo.png'}
           alt={'google'}
+          className='rounded-3xl shadow-xl object-contain'
         ></Image>
         <HomeSearch />
       </div>

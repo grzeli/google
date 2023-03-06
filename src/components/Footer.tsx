@@ -7,12 +7,12 @@ export default function Footer() {
       <div className='border-b px-8 py-3'>
         <CountryBar />
       </div>
-      <div className='flex flex-col sm:flex-row justify-between items-center px-8 py-3 space-y-7 sm:space-y-0'>
+      <div className='flex flex-col sm:flex-row justify-between items-center px-8 py-3 space-y-3 sm:space-y-0'>
         <ul className='flex items-center space-x-6'>
           <li className='link'>About</li>
           <li className='link'>Advertising</li>
           <li className='link'>Business</li>
-          <li className='link'>How Search works</li>
+          <li className='link truncate w-[30px] sm:w-auto'>How Search works</li>
         </ul>
         <ul className='flex items-center space-x-6'>
           <li className='link'>Privacy</li>
